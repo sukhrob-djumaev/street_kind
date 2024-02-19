@@ -17,8 +17,17 @@ class $AssetsAnimationsGen {
   LottieGenImage get coinAnimation =>
       const LottieGenImage('assets/animations/coin_animation.json');
 
+  /// File path: assets/animations/exchange_animation.json
+  LottieGenImage get exchangeAnimation =>
+      const LottieGenImage('assets/animations/exchange_animation.json');
+
+  /// File path: assets/animations/success.json
+  LottieGenImage get success =>
+      const LottieGenImage('assets/animations/success.json');
+
   /// List of all assets
-  List<LottieGenImage> get values => [coinAnimation];
+  List<LottieGenImage> get values =>
+      [coinAnimation, exchangeAnimation, success];
 }
 
 class $AssetsImagesGen {
@@ -50,9 +59,13 @@ class $AssetsImagesRasterGen {
   AssetGenImage get petfood =>
       const AssetGenImage('assets/images/raster/petfood.png');
 
+  /// File path: assets/images/raster/t-shirt.png
+  AssetGenImage get tShirt =>
+      const AssetGenImage('assets/images/raster/t-shirt.png');
+
   /// List of all assets
   List<AssetGenImage> get values =>
-      [feeding, pawcoin, pawheart, pawpointer, petfood];
+      [feeding, pawcoin, pawheart, pawpointer, petfood, tShirt];
 }
 
 class Assets {

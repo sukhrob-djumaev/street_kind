@@ -1,6 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:street_kind/features/leaderboard/widgets/leaderboard_item.dart';
+import 'package:street_kind/gen/assets.gen.dart';
+import 'package:street_kind/shared/router/app_router.gr.dart';
 import 'package:street_kind/shared/utils/extensions/extensions_on_context.dart';
 
 import '../utils/demo.dart';
@@ -82,6 +84,7 @@ class LeaderboardPage extends StatelessWidget {
               ),
             ),
           ),
+
           // const SizedBox(
           //   height: 16,
           // ),
@@ -90,6 +93,17 @@ class LeaderboardPage extends StatelessWidget {
           //   highLightMe: false,
           // )
         ],
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        heroTag: '123',
+        onPressed: () {
+          context.router.push(const ExchangeRoute());
+        },
+        label: const Text(
+          'Exchange',
+          style: TextStyle(fontWeight: FontWeight.w600, fontSize: 17),
+        ),
+        icon: Assets.images.raster.pawcoin.image(width: 30),
       ),
     );
   }

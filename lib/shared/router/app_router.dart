@@ -15,6 +15,8 @@ class AppRouter extends $AppRouter {
           ],
         ),
         AutoRoute(page: ScanFeederQRRoute.page),
-        AutoRoute(page: ConfirmFeedRoute.page)
+        AutoRoute(page: ConfirmFeedRoute.page),
+        AutoRoute(page: ExchangeRoute.page),
+        AutoRoute(page: ExchangeTShirtRoute.page)
       ];
 }
